@@ -10,7 +10,7 @@ const services: ServiceItem[] = [
     title: 'Presentaciones Falleras y Reinas',
     description: 'Tradición y majestuosidad. Escenarios clásicos, tronos y decoración floral para la exaltación de nuestras fiestas.',
     icon: Crown,
-    imageUrl: 'https://images.unsplash.com/photo-1577056923235-5154eb27b140?auto=format&fit=crop&q=80'
+    imageUrl: '/public/PresentacionesReinaFiestas.jpg'
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const services: ServiceItem[] = [
     title: 'Actos Institucionales',
     description: 'Protocolo y solemnidad. Escenarios oficiales, tarimas y acondicionamiento para actos públicos.',
     icon: Mic2,
-    imageUrl: 'https://images.unsplash.com/photo-1475721027767-p53772153876?auto=format&fit=crop&q=80'
+    imageUrl: '/public/ActoPublico.jpg'
   }
 ];
 

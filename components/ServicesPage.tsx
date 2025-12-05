@@ -10,7 +10,7 @@ const serviceSections = [
     subtitle: 'Tradición Valenciana',
     description: 'Somos especialistas en la creación de escenarios majestuosos para el mundo fallero y fiestas patronales. Entendemos la solemnidad y la emoción de la exaltación. Diseñamos tronos personalizados, decoraciones florales y fondos escenográficos que realzan la belleza de la indumentaria valenciana.',
     features: ['Decoración para fondos de escenarios', 'Pasarelas', 'Escenarios y gradas', 'Alfombras, Reposteros y Tronos'],
-    image: 'https://images.unsplash.com/photo-1569388330292-7a6a84165c74?auto=format&fit=crop&q=80',
+    image: '/public/PresentacionesReinaFiestas.jpg',
     icon: Crown,
     align: 'left'
   },
@@ -40,7 +40,7 @@ const serviceSections = [
     subtitle: 'Protocolo y Solemnidad',
     description: 'Experiencia en la organización espacial de actos oficiales. Cumplimos rigurosamente con las necesidades de protocolo, ofreciendo tarimas, atriles, trasera de prensa y banderas para inauguraciones, mítines y actos oficiales.',
     features: ['Tarimas Enmoquetadas', 'Atriles y Banderas', 'Traseras Institucionales', 'Mobiliario de Protocolo'],
-    image: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80',
+    image: '/public/ActoPublico.jpg',
     icon: Mic2,
     align: 'right'
   }

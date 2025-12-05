@@ -15,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat bg-fixed transform scale-105"
         style={{
           // In a real implementation, you would place your image in /assets/images/home-hero.jpg
-          backgroundImage: 'url("https://images.unsplash.com/photo-1544161513-0179fe746fd5?q=80&w=2070&auto=format&fit=crop")',
+          backgroundImage: 'url(/public/HomePicture.jpg)',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/40 to-zinc-950"></div>
