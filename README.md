@@ -1,20 +1,26 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Pinazo Decoraciones Web
 
-# Run and deploy your AI Studio app
+Sitio web corporativo de alta gama para la empresa de decoración e infraestructura de eventos Pinazo Decoraciones, ubicada en Valencia. El proyecto está implementado como una Aplicación de una Sola Página (SPA) moderna, enfocada en la velocidad y el diseño visual.
 
-This contains everything you need to run your app locally.
+***
 
-View your app in AI Studio: https://ai.studio/apps/drive/187WW2GWrLEYU8ky1q55puQ3Yn_ZtQ9vl
+## Tecnologías Empleadas
 
-## Run Locally
+El proyecto utiliza un stack de desarrollo *frontend* moderno y ligero:
 
-**Prerequisites:**  Node.js
+| Componente | Tecnología | Versión | Propósito |
+| :--- | :--- | :--- | :--- |
+| **Framework UI** | **React** | `^19.2.1` | Biblioteca principal para construir la interfaz de usuario. |
+| **Tooling** | **Vite** | `^6.2.0` | Empaquetador y servidor de desarrollo rápido. |
+| **Lenguaje** | **TypeScript** | `~5.8.2` | Añade tipado estático para mejorar la robustez y mantenibilidad del código. |
+| **Estilos** | **Tailwind CSS** | (CDN) | Framework CSS de utilidad para un diseño rápido y responsivo. |
+| **Iconografía** | **Lucide React** | `^0.555.0` | Conjunto de iconos modulares utilizados en la UI. |
+| **Fuentes** | **Playfair Display & Lato** | (Google Fonts) | Usadas para estilos `serif` y `sans` respectivamente, definidas en `tailwind.config`. |
 
+## Características Clave
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+* **SPA con Enrutamiento Lógico:** La navegación se gestiona internamente mediante el estado `currentView` en `App.tsx` (State-based Routing), cambiando el componente de página renderizado sin recargar la página.
+* **Tema Oscuro (Dark Mode):** Implementado con clases de Tailwind CSS a nivel del elemento `<html>` y gestionado con un *state* en `App.tsx` para una transición de color fluida.
+* **Componentes Modulares:** Estructura limpia con componentes reutilizables (como `Button` y `SectionHeading`) en la carpeta `ui`.
+
+---
