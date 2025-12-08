@@ -17,14 +17,14 @@ const services: ServiceItem[] = [
     title: 'Bodas y Celebraciones',
     description: 'Creamos el ambiente romántico perfecto. Ceremonias civiles, banquetes y rincones con encanto.',
     icon: Heart,
-    imageUrl: 'https://images.unsplash.com/photo-1519225468359-2996bc15e556?auto=format&fit=crop&q=80'
+    imageUrl: '/public/Boda.jpeg'
   },
   {
     id: 3,
     title: 'Eventos Corporativos',
     description: 'Stands, ferias y lanzamientos de producto. Infraestructura profesional para potenciar su imagen de marca.',
     icon: Building2,
-    imageUrl: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80'
+    imageUrl: '/public/EventoCorporativo.jpeg'
   },
   {
     id: 4,

@@ -20,7 +20,7 @@ const serviceSections = [
     subtitle: 'Momentos Inolvidables',
     description: 'Transformamos espacios en escenarios de ensueño. Ya sea una ceremonia civil al aire libre o un gran banquete, cuidamos cada rincón. Desde la alfombra nupcial hasta la iluminación ambiental que acompaña el baile.',
     features: ['Enmoquetados', 'Alfombras', 'Sillones y Reclinatorios', 'Terciopelos y Damascos'],
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80',
+    image: '/public/Boda.jpeg',
     icon: Heart,
     align: 'right'
   },
@@ -30,7 +30,7 @@ const serviceSections = [
     subtitle: 'Soluciones e Infraestructuras',
     description: 'Soluciones integrales para ferias, congresos y eventos de empresa. Creamos stands de diseño, zonas de acreditación y espacios de networking que reflejan la identidad corporativa de su marca con elegancia y profesionalidad.',
     features: ['Mobiliario especializado', 'Escenarios Modulares', 'Enmoquetado', 'Branding y Señalética'],
-    image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?auto=format&fit=crop&q=80',
+    image: '/public/EventoCorporativo.jpeg',
     icon: Building2,
     align: 'left'
   },

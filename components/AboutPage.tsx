@@ -82,7 +82,7 @@ export const AboutPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
             <div className="h-[400px] overflow-hidden rounded-sm relative group">
                 <img 
-                    src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80" 
+                    src="/public/Antiguas/AltarAntiguo.jpeg" 
                     alt="Evento Antiguo" 
                     className="w-full h-full object-cover filter sepia opacity-90 hover:opacity-100 group-hover:scale-105 transition-all duration-700"
                 />
@@ -92,7 +92,7 @@ export const AboutPage: React.FC = () => {
             </div>
              <div className="h-[400px] overflow-hidden rounded-sm relative group">
                 <img 
-                    src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80" 
+                    src="/public/ExaltaciónFFMM.jpg" 
                     alt="Evento Moderno" 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
