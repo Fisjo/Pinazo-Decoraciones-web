@@ -27,13 +27,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Creando atmósferas únicas desde 1995. Referente en decoración de eventos e infraestructuras en la Comunidad Valenciana.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-wine-500 hover:text-white hover:border-wine-500 transition-all">
-                <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-wine-500 hover:text-white hover:border-wine-500 transition-all">
+              <a href="https://www.facebook.com/nachopinazo/?locale=es_ES" className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-wine-500 hover:text-white hover:border-wine-500 transition-all">
                 <Facebook size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-wine-500 hover:text-white hover:border-wine-500 transition-all">
+              <a href="https://www.linkedin.com/in/pinazo-decoraciones-2426603a/" className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center hover:bg-wine-500 hover:text-white hover:border-wine-500 transition-all">
                 <Linkedin size={18} />
               </a>
             </div>
