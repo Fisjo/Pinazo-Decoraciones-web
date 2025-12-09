@@ -58,15 +58,15 @@ export const LocationPage: React.FC = () => {
 
                 {/* Map Frame (Simulated) */}
                 <div className="w-full lg:w-2/3 h-full bg-zinc-200 dark:bg-zinc-800 relative">
-                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3079.456637854616!2d-0.4042816!3d39.4816999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf30b0b8b%3A0x6290073081395374!2sAv.%20de%20les%20Corts%20Valencianes%2C%2058%2C%2046015%20Val%C3%A8ncia%2C%20Valencia!5e0!3m2!1ses!2ses!4v1715421234567!5m2!1ses!2ses" 
+                    <iframe 
+                        src="https://maps.google.com/maps?q=Pinazo%20Decoraciones%20S.L.%2C%20C%2F%20Ceramistas%20n2%2C%2046132%20Almassera%2C%20Espa%C3%B1a&t=&z=15&ie=UTF8&iwloc=&output=embed" 
                         width="100%" 
                         height="100%" 
                         style={{border:0, filter: 'grayscale(100%) invert(90%) contrast(85%)'}} 
                         allowFullScreen 
                         loading="lazy" 
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Google Maps"
+                        title="Ubicación de Pinazo Decoraciones"
                     ></iframe>
                     
                     {/* Custom Map Overlay for style consistency */}
