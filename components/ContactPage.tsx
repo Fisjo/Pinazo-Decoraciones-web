@@ -1,7 +1,6 @@
 import React from 'react';
 import { SectionHeading } from './ui/SectionHeading';
-import { Button } from './ui/Button';
-import { Phone, Mail, Clock } from 'lucide-react';
+import { Phone, Mail, Clock, MapPin } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
   return (
@@ -13,90 +12,85 @@ export const ContactPage: React.FC = () => {
           alignment="center"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-12">
-            {/* Contact Info */}
-            <div className="space-y-10">
-                <div>
-                    <h3 className="font-serif text-2xl text-zinc-900 dark:text-white mb-6">Información de Contacto</h3>
-                    <p className="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed mb-8">
-                        Estamos a su disposición para asesorarle en su próximo evento. Solicite presupuesto sin compromiso o concierte una cita para visitar nuestras instalaciones.
-                    </p>
+        {/* Texto Introductorio Centrado */}
+        <div className="max-w-3xl mx-auto text-center mt-12 mb-16">
+            <h3 className="font-serif text-2xl text-zinc-900 dark:text-white mb-6">
+                Estamos a su disposición
+            </h3>
+            <p className="text-zinc-600 dark:text-zinc-400 font-light leading-relaxed text-lg">
+                Para cualquier consulta sobre nuestros servicios de decoración, eventos o alquiler de material, 
+                no dude en contactarnos a través de los siguientes canales o visitarnos en nuestras instalaciones.
+            </p>
+        </div>
+
+        {/* Grid de Contacto (3 Columnas) */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {/* Tarjeta Teléfono */}
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm hover:shadow-md transition-all text-center group">
+                <div className="w-12 h-12 bg-wine-50 dark:bg-wine-900/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Phone className="text-wine-600 dark:text-wine-400" size={24} />
                 </div>
+                <h4 className="text-zinc-900 dark:text-white font-serif text-xl mb-3">Llámenos</h4>
+                <p className="text-zinc-600 dark:text-zinc-400 font-medium text-lg mb-1">+34 96 391 20 21</p>
+                <p className="text-zinc-500 text-sm">Lunes a Viernes, 07:30 - 14:30</p>
+            </div>
 
-                <div className="space-y-6">
-                    <div className="flex items-start p-6 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm transition-colors">
-                        <Phone className="text-wine-500 mt-1 mr-4" size={24} />
-                        <div>
-                            <p className="text-zinc-900 dark:text-white font-serif text-lg mb-1">Teléfono</p>
-                            <p className="text-zinc-600 dark:text-zinc-400">+34 96 391 20 21</p>
-                            <p className="text-zinc-500 text-sm mt-1">Lunes a Viernes, 07:30 - 14:30</p>
-                        </div>
-                    </div>
-
-                    <div className="flex items-start p-6 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm transition-colors">
-                        <Mail className="text-wine-500 mt-1 mr-4" size={24} />
-                        <div>
-                            <p className="text-zinc-900 dark:text-white font-serif text-lg mb-1">Email</p>
-                            <p className="text-zinc-600 dark:text-zinc-400">pinazo@pinazodecoraciones.com</p>
-                            <p className="text-zinc-600 dark:text-zinc-400">nacho@pinazodecoraciones.com</p>
-                            <p className="text-zinc-600 dark:text-zinc-400">carlos@pinazodecoraciones.com</p>
-                        </div>
-                    </div>
-
-                     <div className="flex items-start p-6 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm transition-colors">
-                        <Clock className="text-wine-500 mt-1 mr-4" size={24} />
-                        <div>
-                            <p className="text-zinc-900 dark:text-white font-serif text-lg mb-1">Horario Atención</p>
-                            <p className="text-zinc-600 dark:text-zinc-400">Lunes - Viernes: 07:30 - 14:30</p>
-                        </div>
-                    </div>
+            {/* Tarjeta Email */}
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm hover:shadow-md transition-all text-center group">
+                <div className="w-12 h-12 bg-wine-50 dark:bg-wine-900/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Mail className="text-wine-600 dark:text-wine-400" size={24} />
+                </div>
+                <h4 className="text-zinc-900 dark:text-white font-serif text-xl mb-3">Escríbanos</h4>
+                <div className="space-y-1">
+                    <p className="text-zinc-600 dark:text-zinc-400">pinazo@pinazodecoraciones.com</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">nacho@pinazodecoraciones.com</p>
+                    <p className="text-zinc-600 dark:text-zinc-400">carlos@pinazodecoraciones.com</p>
                 </div>
             </div>
 
-            {/* Form */}
-            <div className="bg-white dark:bg-zinc-900 p-8 md:p-10 rounded-sm border-t-4 border-wine-500 shadow-2xl transition-colors">
-                <h3 className="font-serif text-2xl text-zinc-900 dark:text-white mb-2">Envíenos un mensaje</h3>
-                <p className="text-zinc-500 text-sm mb-8">Le responderemos con la mayor brevedad posible.</p>
-                
-                <form className="space-y-6">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">Nombre</label>
-                            <input type="text" className="w-full bg-zinc-50 dark:bg-black border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white px-4 py-3 focus:outline-none focus:border-wine-500 transition-colors" placeholder="Su nombre" />
-                        </div>
-                        <div>
-                            <label className="block text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">Teléfono</label>
-                            <input type="tel" className="w-full bg-zinc-50 dark:bg-black border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white px-4 py-3 focus:outline-none focus:border-wine-500 transition-colors" placeholder="+34..." />
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <label className="block text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">Email</label>
-                        <input type="email" className="w-full bg-zinc-50 dark:bg-black border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white px-4 py-3 focus:outline-none focus:border-wine-500 transition-colors" placeholder="correo@ejemplo.com" />
-                    </div>
-
-                    <div>
-                        <label className="block text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">Tipo de Evento</label>
-                        <select className="w-full bg-zinc-50 dark:bg-black border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white px-4 py-3 focus:outline-none focus:border-wine-500 transition-colors appearance-none">
-                            <option>Seleccione una opción</option>
-                            <option>Boda</option>
-                            <option>Presentación Fallera</option>
-                            <option>Evento Corporativo</option>
-                            <option>Acto Institucional</option>
-                            <option>Alquiler de Material</option>
-                            <option>Otro</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <label className="block text-xs uppercase tracking-widest text-zinc-500 dark:text-zinc-400 mb-2">Mensaje</label>
-                        <textarea rows={4} className="w-full bg-zinc-50 dark:bg-black border border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-white px-4 py-3 focus:outline-none focus:border-wine-500 transition-colors" placeholder="Describa brevemente lo que necesita..."></textarea>
-                    </div>
-
-                    <Button type="button" className="w-full">Enviar Mensaje</Button>
-                </form>
+            {/* Tarjeta Horario */}
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-white/5 rounded-sm shadow-sm hover:shadow-md transition-all text-center group">
+                <div className="w-12 h-12 bg-wine-50 dark:bg-wine-900/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Clock className="text-wine-600 dark:text-wine-400" size={24} />
+                </div>
+                <h4 className="text-zinc-900 dark:text-white font-serif text-xl mb-3">Horario</h4>
+                <p className="text-zinc-600 dark:text-zinc-400 mb-1">Lunes - Viernes</p>
+                <p className="text-zinc-900 dark:text-white font-medium text-lg">07:30 - 14:30</p>
+                <p className="text-zinc-500 text-sm mt-2">Sábados y Domingos cerrado</p>
             </div>
         </div>
+
+        {/* Sección de Mapa integrada (Opcional pero recomendada para rellenar espacio) */}
+        <div className="w-full h-[400px] bg-zinc-200 dark:bg-zinc-800 relative rounded-sm overflow-hidden shadow-lg border border-zinc-200 dark:border-zinc-700">
+             <iframe 
+                src="https://maps.google.com/maps?q=Pinazo%20Decoraciones%20S.L.%2C%20C%2F%20Ceramistas%20n2%2C%2046132%20Almassera%2C%20Espa%C3%B1a&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style={{border:0, filter: 'grayscale(100%) invert(90%) contrast(85%)'}} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Ubicación de Pinazo Decoraciones"
+            ></iframe>
+            {/* Overlay para estilo */}
+            <div className="absolute inset-0 pointer-events-none mix-blend-overlay bg-wine-500/10"></div>
+            
+            {/* Etiqueta flotante sobre el mapa */}
+            <div className="absolute bottom-4 left-4 bg-white dark:bg-zinc-900 p-4 rounded shadow-lg max-w-xs border-l-4 border-wine-500">
+                <div className="flex items-start gap-3">
+                    <MapPin className="text-wine-500 mt-1 shrink-0" size={20} />
+                    <div>
+                        <p className="font-bold text-zinc-900 dark:text-white text-sm">Visítenos</p>
+                        <p className="text-zinc-600 dark:text-zinc-400 text-xs mt-1">
+                            C/ Ceramistas nº 2<br/>
+                            Polígono Ind. El Barranc.<br/>
+                            46132 Almàssera (Valencia)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
       </div>
     </div>
   );
